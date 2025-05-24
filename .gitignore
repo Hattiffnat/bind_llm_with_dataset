@@ -172,8 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-<<<<<<< HEAD
-=======
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
@@ -183,5 +181,5 @@ cython_debug/
 .cursorindexingignore
 
 /models/
+/dataset/
 /.kaggle/
->>>>>>> 3a8bdf2 (init commit)
