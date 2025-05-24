@@ -1,5 +1,7 @@
 # Запуск
-```make run```
+```powershell
+make run
+```
 
 # Отчёт по решению
 
