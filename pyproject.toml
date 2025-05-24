@@ -1,0 +1,42 @@
+[project]
+name = "bind-llm-with-dataset"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Hattiffnat", email = "sereyfeam@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "llama-cpp-python (>=0.3.9,<0.4.0)",
+    "huggingface-hub (>=0.31.4,<0.32.0)",
+    "kagglehub (>=0.3.12,<0.4.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "kaggle (>=1.7.4.5,<2.0.0.0)",
+    "restrictedpython (>=8.0,<9.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "*", from = "src" }]
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.2.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+target-version = ["py311"]
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+line_length = 90
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
